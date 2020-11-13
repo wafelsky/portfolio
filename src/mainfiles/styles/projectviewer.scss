@@ -1,0 +1,258 @@
+@import 'global-params.scss';
+
+
+
+
+
+.firstcolor{
+    background-color: $lightDark !important;
+}
+
+.secondcolor{
+    background-color: $darkDark!important;
+}
+.orange-color{
+  background-color:$c1 !important;
+}
+.orange-color-symbols{
+  color:$c2 !important;
+}
+
+
+
+
+
+
+.projects-showcase{
+margin-top:0px;
+ margin-bottom:420px;
+}
+
+.scene{
+
+    width: 1200px;
+    height: 400px;
+    perspective: 900px;
+    transform-style: preserve-3d;
+    overflow: hidden;
+
+    position:absolute;
+  }
+.translate-responsive{
+
+  transform-style: preserve-3d;
+
+  height:100px;
+  display:flex;
+  flex-flow:column wrap;
+  align-items: center;
+
+
+}
+
+.wall-wrapper{
+  @include trans(1s);
+ 
+  cursor: pointer;
+  transform-style: preserve-3d;
+
+}
+
+.wall{
+
+  position:absolute;
+  z-index:0;
+  width:600px;
+  height:400px;
+}
+.thumbnail-div{
+ 
+  width:inherit;
+  height:inherit;
+ 
+}
+
+.wall-floor{
+  transform: translateX(-2000px)translateZ(-1700px)translateY(-1600px)rotateX(-90deg);
+  -webkit-transform:translateX(-2000px)translateZ(-2000px)translateY(-1600px)rotateX(-90deg);
+  -moz-transform: translateX(-2000px)translateZ(-1700px)translateY(-1600px)rotateX(-90deg);
+  -ms-transform: translateX(-2000px)translateZ(-1700px)translateY(-1600px)rotateX(-90deg);
+   -o-transform: translateX(-2000px)translateZ(-1700px)translateY(-1600px)rotateX(-90deg);
+  
+  position:absolute;
+  transform-style: preserve-3d;
+  width:2000px;
+  height:4000px;
+  opacity:1;
+  @include trans(1s);
+}
+
+.first-canvas{
+  width:4000px;
+  height:4000px;
+  background-color:#101010;
+}
+
+.tran-1s{
+  @include trans(1s);
+}
+.tran-05s{
+  @include trans(0.5s); 
+}
+
+.button-panel-wrapper{
+  width:100vw;
+  display:flex;
+  flex-flow:column wrap;
+  align-items: center;
+}
+.button-panel-2{
+  position:absolute;
+  z-index:20;
+  background-color:#191919;
+  border-radius:10px 10px 10px 10px;
+  width:auto;
+ 
+  display:flex;
+  flex-flow:row wrap;
+  align-items: center;
+
+  margin-top:-40px;
+}
+
+.button-pannel{
+  position:absolute;
+  text-align: center;
+  width:auto;
+  z-index:20;
+  display:flex;
+  flex-flow:row wrap;
+  margin-top:420px;
+  border-radius:10px 10px 10px 10px;
+ background-color:#191919;
+ 
+}
+.button-1{
+  @include trans(1s);
+  width:70px;
+  height:50px;
+  margin-left:5px !important;
+  margin-right:5px !important;
+  border-radius: 20px 20px 20px 20px;
+  margin: auto;
+  margin-top:10px;
+  cursor: pointer;
+  
+}
+
+
+.arrowright{
+  font-size:40px;
+  transform: rotate(180deg);
+  color:$white;
+  cursor: pointer;
+  
+}
+.arrowleft{
+  font-size:40px;
+  color:$white;
+  cursor: pointer;
+}
+.hidedetails{
+  color:$white;
+  margin-left:10px;
+  font-size:40px;
+  cursor: pointer;
+}
+.button-1:hover .hidedetails{
+  transform: scale(1.1);
+  font-size:40px;
+
+}
+.button-1:hover .arrowleft{  transform: scale(1.1)}
+.button-1:hover .arrowright{
+  transform: scale(1.1)   rotate(180deg);;
+
+}
+
+.fill-image{
+  @include select(none);
+  border-radius:20px 20px 20px 20px;
+  width:inherit;
+  height:inherit;
+  position:absolute;
+}
+.project-img{
+  
+  width:inherit;
+  height: inherit;
+
+}
+.lights{
+  position:absolute;
+  border-radius:20px 20px 20px 20px;
+  margin-left:-2px;
+  z-index:20;
+  background-color:$black;
+  width:604px;
+  height:402px;
+  @include trans(1s);
+  opacity:1;
+}
+.lightbulb{
+  color:$c1;
+  font-size:100px;
+  margin-left:260px;
+  margin-top:140px;
+  transform: scale(3);
+}
+.project-prnt{
+ position:absolute;
+ z-index:2;
+ width:261px;
+ height:265px;
+ margin-left:171px;
+ margin-top:70px;
+}
+.view-button{
+  position:absolute;
+  z-index:10;
+  opacity:0.8;
+ 
+  padding:5px;
+  margin-top:360px;
+ margin-left:190px;
+  border-radius:20px 20px 20px 20px;
+  @include trans(1s);
+}
+
+.view-button:hover {
+  background-color:$c2;
+  background:$c3;
+}
+.view-button-text{
+  color:$white !important;
+  font-family: $f2;
+  font-size:22px !important;
+  width:200px;
+}
+
+.header-div{
+  position:absolute;
+  z-index:10;
+
+  width:300px;
+  height:80px;
+ margin-top:10px;
+ margin-left:150px;
+  border-radius:20px 20px 20px 20px;
+}
+.projects-header{
+
+  font-size:30px !important;
+  font-family: $f3;
+  color:$white;
+  letter-spacing: 3px;
+  
+}
+

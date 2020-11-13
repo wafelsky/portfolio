@@ -1,0 +1,66 @@
+
+
+$c1:#58bcbd;
+$c2:rgb(21, 85, 202);
+$c3:#9e95f0;
+$c4:#9e95f0;
+
+
+
+$c5:#7b71d8;
+$c6:#3b3291;
+$c7:#58bbbd7c;
+$white:white;
+$black:black;
+
+$text-shadow:#3b3291;;
+
+$lightDark:#191919;
+$darkDark:#101010;
+
+
+
+
+$logocolor1:white;
+$logocolor2:rgb(21, 85, 202);
+$logocolorbackground:black;
+$logotransform:1;
+
+$f1:'Raleway', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$f2:'Roboto','Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$f3:'Anton'   ,'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+///////// change color of navbar 
+:export {
+  cone:$c1;
+    c: $c2;
+    cfour:$c4;
+    csix:$c6;
+  }
+
+@mixin trans($prop){
+    -webkit-transition: all ($prop) ease;  
+    -moz-transition: all ($prop)  ease;  
+    -o-transition: all ($prop)s ease;  
+      -ms-transition: all ($prop) ease;  
+    transition: all ($prop)  ease;
+  }
+
+  @mixin transform($prop){
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+     -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+         transform: translate(0, 0);
+  }
+  @mixin select($none){
+    -webkit-user-select: $none; /* IE 10 and IE 11 */
+    user-select: $none; /* Standard syntax */
+  }
+
+  html{font-size:13px}
+  @media only screen and (max-width: 1400px){html{font-size:13px}}
+  @media only screen and (max-width: 1000px){html{font-size:12px}}
+  @media only screen and (max-width:700px){html{font-size:11px}}
+  @media only screen and (max-width:416px){html{font-size:10px}}
+  @media only screen and (max-width:380px){html{font-size:8px}}

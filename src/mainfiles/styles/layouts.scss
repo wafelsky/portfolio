@@ -1,0 +1,99 @@
+@import 'global-params.scss';
+
+.center-flex{
+    width:100vw;
+    display:flex;
+    flex-flow:column wrap;
+    align-content: center;
+}
+.center{
+    width:1200px;
+    max-width:100vw;
+   
+}
+
+
+.first-section-wrapper{
+    position: relative;
+    width:100vw;
+    margin-top:70px;
+    height: 700px;
+  
+}
+.first-section-img-wrapper{
+    position:absolute;
+    left:50%;
+    margin-left:-55vw;
+    opacity:0.8;
+
+}
+
+
+
+
+
+.first-section-img{
+    
+    height:auto;
+    right:50;
+    height: 700px;
+
+}
+
+@media only screen and (max-width: 1400px){
+    .first-section-img-wrapper{ margin-left:-650px;};
+    .first-section-img{  height: 600px;}
+
+    .first-section-wrapper{height: 600px;
+    .first-mesege-class{margin-top:160px;margin-left:-400px;}
+    h3{font-size:60px !important}
+    .welcome-messge-font{font-size:30px !important}
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .first-section-img-wrapper{margin-left:-500px;}
+    .first-section-img{height: 500px;}
+
+    .first-section-wrapper{height: 500px;
+    .first-mesege-class{margin-top:160px;margin-left:-280px;}
+    h3{font-size:50px !important}
+    .welcome-messge-font{font-size:25px !important}
+    }
+   
+}
+
+@media only screen and (max-width: 600px){
+    .first-section-img-wrapper{margin-left:-450px;}
+    .first-section-img{height: 400px;}
+    .first-section-wrapper{height: 400px;
+    .first-mesege-class{margin-top:110px;margin-left:-40vw}
+    h3{font-size:40px !important}
+    .welcome-messge-font{font-size:20px !important}
+    }
+
+}
+
+.first-mesege-class{
+    position: absolute;
+    left:50%;
+    margin-left:-50vw;
+    margin-top:180px;
+    position:absolute;
+    width:550px;
+}
+
+.sign-footer{color:$c3; }
+.sign-footer:hover{color:$c3}
+.footer-text{font-family: $f1; color:white !important; font-size: 20px !important;}
+.footer-wrapper{display:flex; flex-flow: column wrap; align-content: center; }
+.footer-iconz-wrapper{display:flex; flex-flow: row wrap; align-content: center; width: max-content;}
+.fi-background{background-color: $c7; width:60px; height:60px; border-radius: 50%; margin:10px; border:2px solid $c1;  @include trans(0.5s); cursor: pointer;}
+.fi-font{font-size:30px !important; text-align: center;  color: black!important; margin-left:14px; margin-top:12px}
+
+.fi-background:hover{
+    box-shadow: 0 0 40px $c4;
+    transform: translateY(-10px);
+    background:transparent;
+}
+.fi-background:hover .fi-font{color: $c3 !important; @include trans(0.5s)}
