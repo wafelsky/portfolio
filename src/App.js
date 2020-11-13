@@ -46,7 +46,7 @@ function App() {
   );
 }
 
-const adjectives = [["JS developerr"],["React developer"],["Web developer"],["CSS developer"]];
+const adjectives = [["JS developer"],["React developer"],["Web developer"],["CSS developer"]];
 
 const navbuttons  = [["Home",],["About"],["Skills"],["Portfolio"],["Contact"]];
 //   0          1            2
