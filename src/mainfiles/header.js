@@ -52,18 +52,8 @@ class Navbar extends React.Component {
         border:this.state.windowoffset!==0 ? "2px solid #101010":"none"
 
       }} >
-        {/* LOGO CLASES */}
+      
           <div className="flex-header-row left-buttons " >
-          {/** 
-          <div className="logo-white-background">
-          <div className="logo-wrapper-e"><h1 className="logo-experiments">M</h1></div></div>*/}
-          {/** old logo without wrapper
-          <div className="logob-body">
-          <div className="logo-J-box"> <h1 className="logo-J">J</h1> </div>
-          <div className="logo-text-box"><h1 className="top-logo-sign"><b>JAKUB MAZUR</b></h1><h1 className="bottom-logo-sign"><b>IT DREAMSIGNER</b></h1></div>
-          </div>
-          */}
-          
           <div className="logo-wrapper">
           <img className="logo-png" src={logopng}></img>
           <div></div></div>
@@ -72,16 +62,17 @@ class Navbar extends React.Component {
           {this.state.width>=this.state.widthchange &&<div className="flex-header-row">
           {this.props.navbuttons.map((x,i)=>{
             return  <div key={i} className="button-wrapper">
-            <div className="panel-button" onClick={()=>{this.setState({currentlyclicked:this.props.navbuttons[i][0]})}}>
-            <h1 className="left-panel-font" >
             <a href={`#${this.props.navbuttons[i][0]}`} 
-            style={{color:this.state.currentlyclicked===this.props.navbuttons[i][0] ? styles.cfour : "white"
-          }} className="trans-text">
-           
-            {this.props.navbuttons[i][0]}</a></h1>
-            </div>
+    className="trans-text">
+            <div className="panel-button" onClick={()=>{this.setState({currentlyclicked:this.props.navbuttons[i][0]})}}>
+            <h1 className="left-panel-font" style={{color:this.state.currentlyclicked===this.props.navbuttons[i][0] ? styles.cfour : "white"
+          }} >
+            
+            {this.props.navbuttons[i][0]}</h1>
+            </div></a>
             <div className="underline-magic" style={{width: this.state.currentlyclicked===this.props.navbuttons[i][0] ? "150px" : "0px" , }} ></div> 
             </div>
+            
           
           })}</div>}
           </div>
@@ -91,7 +82,7 @@ class Navbar extends React.Component {
           <div className="flex-header-row right-buttons ">
 
           {this.props.navicons.map((x,i)=>{
-            return  <Navicons   i={i}  navicons={this.props.navicons}/ >
+            return  <Navicons   i={i}  navicons={this.props.navicons} />
           })}
 
          
@@ -125,13 +116,11 @@ class Navbar extends React.Component {
     );
   }
 }
-
 class Navicons extends React.Component {
   constructor(props) {
     super(props);
     this.state = { popupopacity:0,};
   }
-
 
   render() {
 
@@ -158,19 +147,9 @@ class Navicons extends React.Component {
          <a href={this.link} target="_blank"> <i className={`${this.icon} hover-icon`} ></i></a>
         }
 
-
-          
           </div>
     );
   }
 }
-
-
-
-{/** */}
-
-
-
-
 
 export default Navbar;

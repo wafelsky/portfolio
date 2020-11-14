@@ -5,6 +5,8 @@ import cute from './background/cute.JPG'
 import Baubles from './baubless.js'
 import Contact from './phone.js'
 
+import cv from './download/cv.pdf'
+
 import styles from './styles/global-params.scss';
 
 
@@ -60,12 +62,8 @@ class FirstSection extends React.Component {
         <div className="center-flex" style={{backgroundColor:"#070707"}}>
         <div className="center overflow-img">
         <div className="first-section-wrapper">
-        
-              
-       
         <div className="first-section-img-wrapper"><img className="first-section-img" src={blackbackground}></img>
-        </div>
-            
+        </div> 
         <div className="first-mesege-class">
         <h1 className="welcome-messge-font ">Hello,I'm <b>Mazur Jakub</b> </h1>
         <h3 className="awesomeanim" 
@@ -73,8 +71,6 @@ class FirstSection extends React.Component {
         ><b>{this.props.adjectives[this.state.incrementmesege]} </b></h3> 
         <h1 className="welcome-messge-font "> Looking for junior job.</h1>
         </div>
-      
-     
         </div>
         </div>
         </div>
@@ -522,7 +518,11 @@ class Contact2 extends React.Component {
             <div className="fluid-contact">
            
             
-            <p className="contact-text">I am available for freelance work. Connect with me via phone: 511518517 or email: mazurjakubb@gmail.com</p>
+            <p className="contact-text">Connect with me via phone: 511518517 or email: mazurjakubb@gmail.com.
+            For more information 
+            <a style={{color:"cyan", cursor:"pointer"}}
+            href={cv} download="MazurJakubCV"
+            > download</a> my CV.</p>
            
             <div className="contact-grid">
             {this.props.logos.map((x,i)=>{
