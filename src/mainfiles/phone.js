@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from 'emailjs-com';
 import myself from "./background/myselferino.jpg";
 
 class Contact extends React.Component {
@@ -23,10 +24,9 @@ class Contact extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleSubmit(event) {
-    /*
+  
 	const templateId = 'template_qzwwoLpA'
 	this.sendFeedback(templateId, {message_html: this.state.feedback, from_name: this.state.name, reply_to: this.state.email})
-  */
 
     if (this.state.feedback !== "") {
       this.state.messegearray.push([
@@ -59,22 +59,18 @@ class Contact extends React.Component {
     this.setState({ feedback: event.target.value });
   }
 
-  sendFeedback(templateId, variables) {
+  sendFeedback (templateId, variables, ) {
     const templateParams = {
       name: this.state.name,
       message: this.state.feedback,
-    };
-    window.emailjs
-      .send("mazurjakubb_gmail_com", "template_qzwwoLpA", templateParams)
-      .then(
-        function (response) {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        function (error) {
-          console.log("FAILED...", error);
-        }
-      );
-  }
+  };
+  window.emailjs.send('mazurjakubb_gmail_com', 'template_qzwwoLpA',templateParams)
+  .then(function(response) {
+     console.log('SUCCESS!', response.status, response.text);
+  }, function(error) {
+     console.log('FAILED...', error);
+  });
+}
 
   componentDidMount() {
     setInterval(() => {
