@@ -639,7 +639,7 @@ class Walls extends React.Component {
           <img src={klawa} className="fill-image"></img>
           <div className="view-button tran-1s">
             <h1 className="view-button-text tran-1s">
-              <a style={{ color: "white" }} target="_blank" href={this.link}>
+              <a className="view-text"  target="_blank" href={this.link}>
                 <i className="fas fa-long-arrow-alt-left"></i>View project
               </a>
             </h1>

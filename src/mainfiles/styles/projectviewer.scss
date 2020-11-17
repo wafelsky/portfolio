@@ -220,16 +220,20 @@ margin-top:0px;
   opacity:0.8;
  
   padding:5px;
-  margin-top:360px;
+  margin-top:357px;
  margin-left:190px;
-  border-radius:20px 20px 20px 20px;
+  border-radius:10px;
   @include trans(1s);
 }
 
 .view-button:hover {
-  background-color:$c2;
-  background:$c3;
+  background-color:$darkDark;
+
 }
+.view-text{color:$darkDark}
+.view-button:hover .view-text{color:$white !important}
+
+
 .view-button-text{
   color:$white !important;
   font-family: $f2;

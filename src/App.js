@@ -73,7 +73,7 @@ const navicons = [
   [
     "fas fa-at",
     "copy",
-    "mazurjakub@gmail.com",
+    "mazurjakubb@gmail.com",
   ],
   [
     "fab fa-linkedin",
@@ -101,7 +101,7 @@ const about = [
     ],
   ],
   ["Education", ["- AGH-environmental engineering-engineering diploma"]],
-  ["Soft-Skills", ["- English - C1", "- Drivers Licence - B1"]],
+  ["Other skills", ["- English - C1", "- Drivers Licence - B1"]],
 ];
 
 const skills = [
@@ -132,7 +132,7 @@ const viewer = [
   //Z / X cords      name      picture     href on click
   [-200, 400, "First portfolio", proj1, "https://mazurjakubcv.netlify.app/"],
   [900, -350, "Pomodoro Clock", pomodoro, "https://pomclock.netlify.app/"],
-  [2000, 400, "Silly games", silly, "https://sillygamebeta.netlify.com/"],
+  [2000, 400, "Drum Machine", silly, "https://drummachinery.netlify.app/"],
   [900, 1150, "Exploding Baloons", balonyky, "https://balonyky.netlify.app/"],
 ];
 
