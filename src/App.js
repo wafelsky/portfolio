@@ -72,8 +72,8 @@ const navicons = [
   ["fas fa-phone-square", "copy", "511 518 517"],
   [
     "fas fa-at",
-    "link",
-    "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mazurjakubb@gmail.com",
+    "copy",
+    "mazurjakub@gmail.com",
   ],
   [
     "fab fa-linkedin",
