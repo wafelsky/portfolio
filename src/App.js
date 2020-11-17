@@ -95,9 +95,9 @@ const about = [
   [
     "Certificates",
     [
-      "- mainfiles Algorithms and Data Structures",
-      "- Responsive Web Design",
-      "- Front End Libraries",
+      "- Algorithms and Data Structures (FCC)",
+      "- Responsive Web Design (FCC)",
+      "- Front End Libraries (FCC)",
     ],
   ],
   ["Education", ["- AGH-environmental engineering-engineering diploma"]],
