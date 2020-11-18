@@ -782,22 +782,24 @@ class Navicons extends React.Component {
     this.link = this.props.navicons[this.props.i][2];
 
     return (
-      <div className="fi-background ">
+   
+      <div >
         {this.action === "copy" && (
-          <div>
+          <div className="fi-background "
+          onClick={() => {
+            navigator.clipboard.writeText(this.copytext);
+            this.setState({ popupopacity: 1 });
+            setTimeout(() => {
+              this.setState({ popupopacity: 0 });
+            }, 1000);
+          }}
+          > 
             <i
-              onClick={() => {
-                navigator.clipboard.writeText(this.copytext);
-                this.setState({ popupopacity: 1 });
-                setTimeout(() => {
-                  this.setState({ popupopacity: 0 });
-                }, 1000);
-              }}
               className={`${this.icon} fi-font`}
             ></i>
             <div
               className="popup"
-              style={{ opacity: this.state.popupopacity, marginTop: "11px" }}
+              style={{ opacity: this.state.popupopacity, marginTop: "11px", marginLeft:"-3px" }}
             >
               <p>Copied</p>
             </div>
@@ -805,11 +807,16 @@ class Navicons extends React.Component {
         )}
         {this.action === "link" && (
           <a href={this.link} target="_blank">
+          <div className="fi-background ">
+          
             {" "}
             <i className={`${this.icon} fi-font`}></i>
-          </a>
+         
+          </div>
+           </a>
         )}
       </div>
+     
     );
   }
 }

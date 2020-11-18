@@ -222,18 +222,21 @@ $underlinecolor:$c3;
 }
 
 .iconz-fontsize{
+
   border-radius:10px;
+  margin-right:25px;
+  margin-left:25px;
   text-align: center;
   @include trans(0.4s);
   font-size:25px !important;
   margin-top:18px;
-  margin-right:50px;
-  width:50px;
+
+  width:max-content;
   height:40px;
 }
-  .hover-icon{color:$c3 !important;}
+  .hover-icon{color:$c3 !important; }
   
-  .popup{ width:50px;height:40px;margin-left:-8px; @include trans(0.8s);}
+  .popup{ width:max-content;height:40px; @include trans(0.8s);}
 
   .iconz-fontsize:hover{}
   .iconz-fontsize:hover .hover-icon{cursor: pointer;}

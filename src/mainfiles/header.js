@@ -133,11 +133,11 @@ class Navbar extends React.Component {
               <div className="iconz-fontsize" onClick={this.smallscreenpanel}>
                 {this.state.navmargin != "-400px" && (
                   <div className="inheritance-issues">
-                    <i className="fas fa-times-circle hover-icon "></i>
+                    <i className="fas fa-times-circle hover-icon " style={{width:"50px"}}></i>
                   </div>
                 )}
                 {this.state.navmargin === "-400px" && (
-                  <i className="fas fa-bars hover-icon"></i>
+                  <i className="fas fa-bars hover-icon" style={{width:"50px"}}></i>
                 )}
               </div>
             )}
@@ -213,7 +213,7 @@ class Navicons extends React.Component {
     this.copytext = this.props.navicons[this.props.i][2];
     this.link = this.props.navicons[this.props.i][2];
     return (
-      <div className="iconz-fontsize ">
+      <div className="iconz-fontsize " >
         {this.action === "copy" && (
           <div>
             <i
@@ -232,11 +232,17 @@ class Navicons extends React.Component {
           </div>
         )}
         {this.action === "link" && (
+          <div>
           <a href={this.link} target="_blank">
             {" "}
             <i className={`${this.icon} hover-icon`}></i>
           </a>
+          <div className="popup" style={{ opacity: this.state.popupopacity }}>
+              <p>Copied</p>
+            </div>
+          </div>
         )}
+       
       </div>
     );
   }
