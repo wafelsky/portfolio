@@ -9,8 +9,10 @@ import "./mainfiles/styles/layouts.scss";
 
 import proj1 from "./mainfiles/background/proj1.png";
 import pomodoro from "./mainfiles/background/pomodoro.png";
-import silly from "./mainfiles/background/sillygamesthumb.png";
+import swapi from "./mainfiles/background/swapi.png";
+
 import balonyky from "./mainfiles/background/balonyky.png";
+import platformer from "./mainfiles/background/platformer.png";
 
 import Navbar from "./mainfiles/header.js";
 import Skeleton from "./mainfiles/skeleton.js";
@@ -41,7 +43,7 @@ function App() {
       ></meta>
       <Navbar navbuttons={navbuttons} navicons={navicons} />
       <Skeleton
-        adjectives={adjectives}
+        adjectives={adjectives} 
         skills={skills}
         about={about}
         viewer={viewer}
@@ -80,6 +82,8 @@ const navicons = [
     "link",
     "https://www.linkedin.com/in/jakub-mazur-99a312195/",
   ],
+  
+  
 ];
 
 const about = [
@@ -114,7 +118,9 @@ const skills = [
   ["Redux", 42],
   ["CSS", 98],
   ["CSS-3D", 70],
-  ["Canvas", 56],
+  ["HTML-Canvas", 56],
+  ["PostgreSQL", 42],
+  ["Express", 42],
 ];
 
 const logos = [
@@ -130,10 +136,11 @@ const logos = [
 
 const viewer = [
   //Z / X cords      name      picture     href on click
-  [-200, 400, "First portfolio", proj1, "https://mazurjakubcv.netlify.app/"],
+  [-200, 400, "Star-wars library", swapi, "https://swapiui.netlify.app/"],
   [900, -350, "Pomodoro Clock", pomodoro, "https://pomclock.netlify.app/"],
-  [2000, 400, "Drum Machine", silly, "https://drummachinery.netlify.app/"],
-  [900, 1150, "Exploding Baloons", balonyky, "https://balonyky.netlify.app/"],
+  [2400, 200, "Exploding Baloons", balonyky, "https://balonyky.netlify.app/"] ,
+  [2400, 1000, "First portfolio", proj1, "https://mazurjakubcv.netlify.app/"],
+  [900, 1150, "2D platformer", platformer, "https://gameprototype1.netlify.app/"],
 ];
 
 export default App;

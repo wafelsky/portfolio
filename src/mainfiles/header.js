@@ -125,7 +125,7 @@ class Navbar extends React.Component {
 
           <div className="flex-header-row right-buttons ">
             {this.props.navicons.map((x, i) => {
-              return <Navicons i={i} navicons={this.props.navicons} />;
+              return <Navicons key={i} i={i} navicons={this.props.navicons} />;
             })}
 
             {/* SMALL SCREEN NAV SCROLL BUTTON */}
@@ -200,18 +200,25 @@ class Navbar extends React.Component {
     );
   }
 }
+
+
+
 class Navicons extends React.Component {
   constructor(props) {
     super(props);
     this.state = { popupopacity: 0 };
   }
 
+  
+
   render() {
+
     this.action = this.props.navicons[this.props.i][1];
     this.icon = this.props.navicons[this.props.i][0];
-
     this.copytext = this.props.navicons[this.props.i][2];
     this.link = this.props.navicons[this.props.i][2];
+
+
     return (
       <div className="iconz-fontsize " >
         {this.action === "copy" && (
